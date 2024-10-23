@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 23:39:44 by akuburas          #+#    #+#             */
-/*   Updated: 2024/10/23 23:57:17 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/10/24 00:05:58 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,4 +87,13 @@ void Span::addRange(int start, int end)
 		throw SpanFullException();
 	for (int i = start; i <= end; i++)
 		_numbers.push_back(i);
+}
+
+void Span::addAmount(int amount)
+{
+	if (_numbers.size() + amount > _n)
+		throw SpanFullException();
+	srand(time(nullptr));
+	for (int i = 0; i < amount; i++)
+		_numbers.push_back(rand());
 }

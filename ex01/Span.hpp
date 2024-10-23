@@ -6,7 +6,7 @@
 /*   By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 23:39:39 by akuburas          #+#    #+#             */
-/*   Updated: 2024/10/23 23:56:02 by akuburas         ###   ########.fr       */
+/*   Updated: 2024/10/24 00:04:46 by akuburas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <algorithm>
 #include <iostream>
 #include <exception>
+#include <ctime>
+#include <cstdlib>
 
 class Span
 {
@@ -30,6 +32,7 @@ class Span
 		
 		void addNumber(int number);
 		void addRange(int start, int end);
+		void addAmount(int amount);
 		
 		int shortestSpan() const;
 		int longestSpan() const;
