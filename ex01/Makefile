@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -Werror -std=c++11 -g
 
 NAME = exercise01
 
-SRCS = main.cpp
+SRCS = main.cpp Span.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
