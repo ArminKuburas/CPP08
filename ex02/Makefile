@@ -6,14 +6,14 @@
 #    By: akuburas <akuburas@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/24 12:18:14 by akuburas          #+#    #+#              #
-#    Updated: 2024/10/24 12:18:33 by akuburas         ###   ########.fr        #
+#    Updated: 2024/10/24 12:18:54 by akuburas         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 C++ = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++11 -g
 
-NAME = exercise01
+NAME = exercise02
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
